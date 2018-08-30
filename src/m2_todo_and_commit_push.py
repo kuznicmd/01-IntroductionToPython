@@ -3,7 +3,7 @@ print('Hello, World')
 ###############################################################################
 #
 #   This line is a COMMENT -- a note to human readers of this file.
-#   When a program runs, it ignores everything from a  # (hash)  marka
+#   When a program runs, it ignores everything from a  # (hash)  markb
 #   to the end of the line with the  #  mark.
 #
 #   We call files that have Python code in them MODULES.
