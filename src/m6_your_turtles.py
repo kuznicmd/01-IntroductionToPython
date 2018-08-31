@@ -66,15 +66,22 @@ rachel.pen_down()
 jerry.pen_down()
 claire.pen_down()
 
+distance = 500
 alfred.speed = 20
 
 for k in range(10):
 
     for k in range(4):
 
-        alfred.forward(500 - k * 25)
+        alfred.forward(distance)
         alfred.right(90)
+        distance = distance - 5
 
+    alfred.pen_up()
+    alfred.left(135)
+    alfred.forward(50)
+    alfred.right(135)
+    alfred.pen_down()
 
 rachel.speed = 20
 
@@ -82,8 +89,15 @@ for k in range(10):
 
     for k in range(4):
 
-        rachel.forward(500 - k * 25)
+        rachel.forward(distance)
         rachel.right(90)
+        distance = distance - 5
+
+    rachel.pen_up()
+    rachel.left(135)
+    rachel.forward(50)
+    rachel.right(135)
+    rachel.pen_down()
 
 jerry.speed = 20
 
@@ -91,8 +105,15 @@ for k in range(10):
 
     for k in range(4):
 
-        jerry.forward(500 - k * 25)
+        jerry.forward(distance)
         jerry.right(90)
+        distance = distance - 5
+
+    jerry.pen_up()
+    jerry.left(135)
+    jerry.forward(50)
+    jerry.right(135)
+    jerry.pen_down()
 
 claire.speed = 20
 
@@ -100,7 +121,14 @@ for k in range(10):
 
     for k in range(4):
 
-        claire.forward(500 - k * 25)
+        claire.forward(distance)
         claire.right(90)
+        distance = distance - 5
+
+    claire.pen_up()
+    claire.left(135)
+    claire.forward(50)
+    claire.right(135)
+    claire.pen_down()
 
 window.close_on_mouse_click()
